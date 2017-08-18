@@ -1,6 +1,6 @@
 {
   "name": "yuidoc-theme-dc-lite",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A javadoc-like light theme for yuidoc",
   "main": "index.js",
   "scripts": {
