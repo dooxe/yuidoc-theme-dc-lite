@@ -3,13 +3,27 @@
     <!--
     <h2 class="off-left">APIs</h2>
     -->
-    <h2 class="off-left">Classes</h2>
+    <h2 class="off-left">Modules</h2>
+    <div id="module-list-panel">
+        <ul id="api-modules" class="apis modules">
+        {{#modules}}
+            <li><a href="{{../projectRoot}}modules/{{name}}.html">{{displayName}}</a></li>
+        {{/modules}}
+        </ul>
+    </div>
 
-    <ul id="api-classes" class="apis classes">
-    {{#classes}}
-        <li><a href="{{../projectRoot}}classes/{{name}}.html">{{displayName}}</a></li>
-    {{/classes}}
-    </ul>
+    <h2 class="off-left">Classes</h2>
+    <div id="class-list-panel">
+        <ul id="api-classes" class="apis classes">
+        {{#classes}}
+            <li>
+                <a href="{{../projectRoot}}classes/{{name}}.html">
+                    {{module}}.{{displayName}}
+                </a>
+            </li>
+        {{/classes}}
+        </ul>
+    </div>
 
     {{#if elements}}
         <ul id="api-elements" class="apis elements">
